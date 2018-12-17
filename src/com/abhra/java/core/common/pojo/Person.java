@@ -1,11 +1,14 @@
 package com.abhra.java.core.common.pojo;
 
-public class Person {
+public class Person implements Cloneable {
 	
 	private String firstName;
 	private String lastName;
 	private int age;
 	private Address address;
+	
+
+	
 	public String getFirstName() {
 		return firstName;
 	}
@@ -34,10 +37,10 @@ public class Person {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		/*result = prime * result + ((address == null) ? 0 : address.hashCode());
+		result = prime * result + ((address == null) ? 0 : address.hashCode());
 		result = prime * result + age;
 		result = prime * result + ((firstName == null) ? 0 : firstName.hashCode());
-		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());*/
+		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
 		return result;
 	}
 	@Override
@@ -69,7 +72,16 @@ public class Person {
 		return true;
 	}
 	
-	
-	
+	public Object clone() 
+	{
+		Object obj = null;
+		try {
+			obj = super.clone();
+		} catch (CloneNotSupportedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return obj;
+	}
 
 }

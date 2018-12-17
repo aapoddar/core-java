@@ -14,6 +14,16 @@ public class ObjectEqStart {
 		System.out.println("Object hashcodes p1 : "+(p1.hashCode()));
 		System.out.println("Object hashcodes p2 : "+(p2.hashCode()));
 		
+		Person p3 = p1;
+		System.out.println("Object == "+(p1==p3));
+		
+		//if makes clone then objects are equal as hashcodes are same.
+		Person p1Clone = (Person)p1.clone();
+		System.out.println(String.format("if clone then hashcodes are '%s' & '%s", 
+				p1.hashCode(),p3.hashCode()));
+		
+		// is their reference same ? - NO
+		System.out.println("is their reference same = "+(p1==p1Clone));
 		
 	}
 
