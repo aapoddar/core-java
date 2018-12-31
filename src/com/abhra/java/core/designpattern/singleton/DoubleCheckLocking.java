@@ -1,4 +1,4 @@
-package com.abhra.java.core.ds.singleton;
+package com.abhra.java.core.designpattern.singleton;
 
 public class DoubleCheckLocking {
 	
