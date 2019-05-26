@@ -15,6 +15,7 @@ public class WaitNotifyTest {
 		Thread thWaiter1 = new Thread(wait1 ,"Waiter thread-1");
 		Thread thWaiter2 = new Thread(wait2 ,"Waiter thread-2");
 		
+		System.out.println("main method...");
 		thWaiter1.start();
 		thNotifier.start();
 		

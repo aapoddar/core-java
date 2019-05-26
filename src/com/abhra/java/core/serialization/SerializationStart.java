@@ -56,7 +56,8 @@ book2.setType("novel");
 		}catch(Exception e){
 			e.printStackTrace();
 		}
-
+		
+		
 	}
 
 }

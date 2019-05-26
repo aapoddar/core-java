@@ -33,6 +33,9 @@ public class Person implements Cloneable {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
+	
+	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;

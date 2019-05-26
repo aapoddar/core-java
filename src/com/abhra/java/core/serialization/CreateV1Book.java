@@ -14,7 +14,7 @@ public class CreateV1Book {
 	public static void doSerialize(Object obj){
 		Book book = (Book)obj;
 		System.out.println("Book hash code before serialization : "+book.hashCode());
-		String filename = "file2.ser"; 
+		String filename = "fileStream.ser"; 
 		
 	     try {
 			

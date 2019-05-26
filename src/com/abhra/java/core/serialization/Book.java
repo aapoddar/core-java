@@ -1,5 +1,6 @@
 package com.abhra.java.core.serialization;
 
+import java.io.IOException;
 import java.io.Serializable;
 
 public class Book  {
