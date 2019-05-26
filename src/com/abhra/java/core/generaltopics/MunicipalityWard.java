@@ -1,6 +1,6 @@
 package com.abhra.java.core.generaltopics;
 
-public abstract  class MunicipalityWard {
+public abstract  class MunicipalityWard implements Cloneable{
 	
 	public static final  String MUNICIPALITY_NAME ="CHINSURAH";
 	

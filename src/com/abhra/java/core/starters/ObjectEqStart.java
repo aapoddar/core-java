@@ -9,13 +9,14 @@ public class ObjectEqStart {
 		Person p1 = new Person();
 		Person p2 = new Person();
 		
-		System.out.println("Object == "+(p1==p2));
-		System.out.println("Object equal : "+(p1.equals(p2)));
+		System.out.println("p1 == p2 :"+(p1==p2));
+		System.out.println("p1 equals p2 : "+(p1.equals(p2)));
 		System.out.println("Object hashcodes p1 : "+(p1.hashCode()));
 		System.out.println("Object hashcodes p2 : "+(p2.hashCode()));
 		
 		Person p3 = p1;
-		System.out.println("Object == "+(p1==p3));
+		System.out.println("p1 == p3 :"+(p1==p3));
+		System.out.println("Object hashcodes p3 : "+(p3.hashCode()));
 		
 		//if makes clone then objects are equal as hashcodes are same.
 		Person p1Clone = (Person)p1.clone();

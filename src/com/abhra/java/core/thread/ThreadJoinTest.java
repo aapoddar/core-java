@@ -14,11 +14,13 @@ public class ThreadJoinTest {
 		// Starts the 1st Thread.
 		t1.start();
 		
+		// Use Join in order to ensure that next thread won't be started until t1 is dead
+		t1.join();
+		
 		// next thread starts 
 		 t2.start();
 		
-		// Use Join in order to ensure that next thread won't be started until t1 is dead
-		t1.join();
+		
 		
 		// Use Join in order to ensure that next thread won't be started after some times
 		t2.join(200000);

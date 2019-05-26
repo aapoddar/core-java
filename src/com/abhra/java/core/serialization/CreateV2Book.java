@@ -9,7 +9,7 @@ public class CreateV2Book {
 	
 	public static void doDeseralize() {
 	
-	String filename = "file2.ser"; 
+	String filename = "fileStream.ser"; 
 	FileInputStream file3;
 	try {
 		file3 = new FileInputStream(filename);
